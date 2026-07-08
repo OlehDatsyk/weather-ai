@@ -76,7 +76,7 @@ weather-ai/
 
 ## Installation guide (Visual Studio Code)
 
-1. **Open the project folder** in VS Code: `File → Open Folder... → weather-ai`
+1. **Open the project folder** in VS Code: `File -> Open Folder... -> weather-ai`
 
 2. **Create a virtual environment** (open a terminal in VS Code with
    `` Ctrl+` ``):
@@ -100,8 +100,8 @@ weather-ai/
      venv\Scripts\activate.bat
      ```
 
-   In VS Code, select this interpreter via `Ctrl+Shift+P` →
-   `Python: Select Interpreter` → choose `./venv`.
+   In VS Code, select this interpreter via `Ctrl+Shift+P` ->
+   `Python: Select Interpreter` -> choose `./venv`.
 
 4. **Install dependencies**:
 
@@ -126,7 +126,7 @@ weather-ai/
    ```
 
 3. Get a **free** OpenWeatherMap key at
-   <https://openweathermap.org/api> → sign up → API keys tab, then set:
+   <https://openweathermap.org/api> -> sign up -> API keys tab, then set:
 
    ```
    WEATHER_API_KEY=your_key_here
@@ -168,7 +168,7 @@ gunicorn -w 2 -b 0.0.0.0:5000 app:app
 
 ## Running / debugging inside VS Code
 
-- Press `F5` (or `Run → Start Debugging`) with a `launch.json` configured
+- Press `F5` (or `Run -> Start Debugging`) with a `launch.json` configured
   for `app.py`, or simply run `python app.py` in the integrated terminal.
 - Set breakpoints directly in `app.py`, `weather_service.py`, or
   `ai_service.py` - Flask's debug reloader (`FLASK_DEBUG=true`) will pick up
