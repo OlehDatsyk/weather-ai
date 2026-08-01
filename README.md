@@ -13,8 +13,8 @@ multi-city comparison tool.
 - 👕 **AI clothing recommendation**
 - 🧭 **AI travel recommendation**
 - 🏃 **AI sports & activity recommendation**
-- 📊 **AI weather comfort score** (0–100, animated ring)
-- 🏙️ **AI city comparison** - compare 2–4 cities at once
+- 📊 **AI weather comfort score** (0-100, animated ring)
+- 🏙️ **AI city comparison** - compare 2-4 cities at once
 - 💬 **AI chat** - ask free-form weather questions, grounded in live data
 - ✨ **Modern chat UI** - typing animation, suggested prompt chips, conversation history
 - 🌗 **Dark / light mode**
@@ -34,22 +34,22 @@ multi-city comparison tool.
 
 ```
 weather-ai/
-├── app.py                 # Flask app factory, routes, error handlers
-├── weather_service.py     # Weather API client + data normalization
-├── ai_service.py          # AI provider abstraction (OpenAI / Anthropic) + domain logic
-├── prompt.py               # All LLM prompt templates
-├── config.py               # Environment-based configuration + validation
+├── app.py # Flask app factory, routes, error handlers
+├── weather_service.py # Weather API client + data normalization
+├── ai_service.py # AI provider abstraction (OpenAI / Anthropic) + domain logic
+├── prompt.py # All LLM prompt templates
+├── config.py # Environment-based configuration + validation
 ├── requirements.txt
 ├── .env.example
 ├── .gitignore
 ├── README.md
 ├── templates/
-│   └── index.html          # Main UI markup
+│   └── index.html # Main UI markup
 └── static/
     ├── css/
-    │   └── style.css       # Design system + responsive styling
+    │   └── style.css # Design system + responsive styling
     └── js/
-        └── app.js          # Frontend logic (search, chat, animations)
+        └── app.js # Frontend logic (search, chat, animations)
 ```
 
 ### Architecture notes
