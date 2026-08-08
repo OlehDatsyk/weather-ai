@@ -253,10 +253,10 @@ python app.py
 
 You should see log lines ending with something like:
 ```
-* Running on http://127.0.0.1:5000
+* Running on http://127.0.0.1:1020
 ```
 
-Hold `Ctrl` and click that link, or manually open **http://127.0.0.1:5000** in your web browser.
+Hold `Ctrl` and click that link, or manually open **http://127.0.0.1:1020** in your web browser.
 
 **To stop the app:** click back into the terminal and press `Ctrl+C`.
 
@@ -318,8 +318,8 @@ Check the terminal running the app for a line starting with `[WARNING] weather-a
 **The page loads but looks unstyled / broken**
 Make sure `templates/index.html`, `static/css/style.css`, and `static/js/app.js` are still in their original folders (`templates/` and `static/`) - Flask expects this exact structure.
 
-**Port 5000 is already in use**
-Another program (or a previous run of this app) is using port 5000. Either stop that program, or set a different port in `.env`:
+**Port 1020 is already in use**
+Another program (or a previous run of this app) is using port 1020. Either stop that program, or set a different port in `.env`:
 ```
 PORT=5001
 ```
