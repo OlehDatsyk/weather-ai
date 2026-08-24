@@ -1,7 +1,7 @@
 /**
  * app.js
  * ------
- * Frontend logic for the Skyline weather assistant. No frameworks —
+ * Frontend logic for the Skyline weather assistant. No frameworks -
  * plain DOM APIs, kept modular via small focused functions.
  */
 
@@ -449,7 +449,7 @@
 
   el.clearChatBtn.addEventListener("click", () => {
     state.chatHistory = [];
-    el.chatMessages.innerHTML = `<div class="chat-welcome"><p>Ask me anything about the weather — clothing choices, travel plans, or how two cities compare.</p></div>`;
+    el.chatMessages.innerHTML = `<div class="chat-welcome"><p>Ask me anything about the weather - clothing choices, travel plans, or how two cities compare.</p></div>`;
   });
 
   // ------------------------------------------------------------------

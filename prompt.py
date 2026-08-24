@@ -21,9 +21,9 @@ PromptPair = Tuple[str, str]
 _BASE_PERSONA = (
     "You are Skyline, a friendly and knowledgeable weather assistant embedded "
     "in a web app. You explain meteorological conditions in clear, warm, "
-    "conversational language for a general audience — never jargon-heavy, "
+    "conversational language for a general audience - never jargon-heavy, "
     "never robotic. You are concise: prefer short paragraphs and, where "
-    "helpful, short bullet lists. You never invent numeric weather data — "
+    "helpful, short bullet lists. You never invent numeric weather data - "
     "you only reason about the figures you are given."
 )
 
@@ -33,7 +33,7 @@ class PromptBuilder:
 
     # ---------------------------------------------------------------
     # 1. Combined per-city insight bundle (explanation, clothing,
-    #    travel, sports, comfort score) — one call, structured JSON.
+    #    travel, sports, comfort score) - one call, structured JSON.
     # ---------------------------------------------------------------
     @staticmethod
     def weather_insights(weather: WeatherData) -> PromptPair:
@@ -42,18 +42,18 @@ class PromptBuilder:
             "You will be given live weather data for one city as JSON. "
             "Respond with ONLY a single valid JSON object (no markdown fences, "
             "no commentary before or after) with exactly these keys:\n"
-            '  "explanation": string — a 2-3 sentence, plain-language read of '
+            '  "explanation": string - a 2-3 sentence, plain-language read of '
             "current conditions, as if chatting with a friend.\n"
-            '  "clothing": string — 2-4 sentences of specific clothing '
+            '  "clothing": string - 2-4 sentences of specific clothing '
             "recommendations suited to the temperature, wind, and precipitation.\n"
-            '  "travel": string — 2-4 sentences on whether it is a good day to '
+            '  "travel": string - 2-4 sentences on whether it is a good day to '
             "travel/commute, and any precautions (driving, flights, walking).\n"
-            '  "sports": string — 2-4 sentences recommending which outdoor or '
+            '  "sports": string - 2-4 sentences recommending which outdoor or '
             "indoor activities/sports suit these conditions best, and which to avoid.\n"
-            '  "comfort_score": integer 0-100 — a single overall weather comfort '
+            '  "comfort_score": integer 0-100 - a single overall weather comfort '
             "score where 100 is ideal, pleasant weather and 0 is extremely "
             "uncomfortable/dangerous.\n"
-            '  "comfort_label": string — a 1-3 word label for the score, e.g. '
+            '  "comfort_label": string - a 1-3 word label for the score, e.g. '
             '"Very Pleasant", "Uncomfortable", "Harsh".\n'
             "Base every judgement strictly on the supplied data."
         )

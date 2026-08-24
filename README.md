@@ -158,12 +158,12 @@ With the virtual environment activated:
 python app.py
 ```
 
-Then open **http://127.0.0.1:1020** in your browser.
+Then open **http://127.0.0.1:8000** in your browser.
 
 For a production-style local run with gunicorn:
 
 ```bash
-gunicorn -w 2 -b 0.0.0.0:1020 app:app
+gunicorn -w 2 -b 0.0.0.0:8000 app:app
 ```
 
 ## Running / debugging inside VS Code
@@ -250,7 +250,7 @@ Then run and open the app:
 python app.py
 ```
 
-Ctrl+click the printed link, or open **http://127.0.0.1:1020** manually.
+Ctrl+click the printed link, or open **http://127.0.0.1:8000** manually.
 
 ### Every time you come back later
 

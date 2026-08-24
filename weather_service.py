@@ -164,7 +164,7 @@ class WeatherService:
 
             return WeatherData(
                 city=payload.get("name", "Unknown"),
-                country=sys_.get("country", "—"),
+                country=sys_.get("country", "-"),
                 latitude=float(coord.get("lat", 0.0)),
                 longitude=float(coord.get("lon", 0.0)),
                 temperature_c=float(main["temp"]),
@@ -191,5 +191,5 @@ class WeatherService:
     @staticmethod
     def _epoch_to_iso(epoch: Optional[int]) -> str:
         if not epoch:
-            return "—"
+            return "-"
         return datetime.fromtimestamp(epoch, tz=timezone.utc).isoformat()

@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<title>Skyline — AI Weather Assistant</title>
+<title>Skyline - AI Weather Assistant</title>
 <meta name="description" content="An AI-powered weather assistant: live conditions, clothing, travel and sports guidance, comfort scoring, and city comparisons." />
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -35,7 +35,7 @@
 
       <form class="search-form" id="searchForm" autocomplete="off">
         <label for="cityInput" class="sr-only">City name</label>
-        <input type="text" id="cityInput" name="city" placeholder="Search a city…" maxlength="100" required />
+        <input type="text" id="cityInput" name="city" placeholder="Search a city..." maxlength="100" required />
         <button type="submit" class="icon-btn search-btn" aria-label="Search">
           <svg viewBox="0 0 24 24" width="17" height="17"><circle cx="11" cy="11" r="7"/><line x1="21" y1="21" x2="16.2" y2="16.2"/></svg>
         </button>
@@ -80,16 +80,16 @@
         <div class="hero-content" id="heroContent" hidden>
           <div class="hero-top">
             <div class="hero-place">
-              <h1 id="heroCity">—</h1>
+              <h1 id="heroCity">-</h1>
               <span id="heroCountry" class="hero-country"></span>
             </div>
             <div class="hero-icon" id="heroIcon" aria-hidden="true"></div>
           </div>
 
           <div class="hero-temp-row">
-            <span class="hero-temp" id="heroTemp">—°</span>
+            <span class="hero-temp" id="heroTemp">-°</span>
             <div class="hero-temp-meta">
-              <span id="heroCondition">—</span>
+              <span id="heroCondition">-</span>
               <span id="heroFeels" class="muted"></span>
             </div>
           </div>
@@ -102,7 +102,7 @@
                 <circle cx="50" cy="50" r="42" class="ring-bg" />
                 <circle cx="50" cy="50" r="42" class="ring-fg" id="ringFg" />
               </svg>
-              <span class="comfort-score-value" id="comfortScoreValue">—</span>
+              <span class="comfort-score-value" id="comfortScoreValue">-</span>
             </div>
             <div class="comfort-text">
               <div class="comfort-label" id="comfortLabel">Comfort score</div>
@@ -128,7 +128,7 @@
 
         <div class="hero-loading" id="heroLoading" hidden>
           <div class="spinner" aria-hidden="true"></div>
-          <p>Reading the sky for you…</p>
+          <p>Reading the sky for you...</p>
         </div>
 
         <div class="hero-error" id="heroError" hidden role="alert">
@@ -151,7 +151,7 @@
 
         <div class="chat-messages" id="chatMessages">
           <div class="chat-welcome">
-            <p>Ask me anything about the weather — clothing choices, travel plans, or how two cities compare.</p>
+            <p>Ask me anything about the weather - clothing choices, travel plans, or how two cities compare.</p>
           </div>
         </div>
 
@@ -159,7 +159,7 @@
 
         <form class="chat-input-row" id="chatForm" autocomplete="off">
           <label for="chatInput" class="sr-only">Message</label>
-          <textarea id="chatInput" placeholder="Ask about the weather…" maxlength="1000" rows="1" required></textarea>
+          <textarea id="chatInput" placeholder="Ask about the weather..." maxlength="1000" rows="1" required></textarea>
           <button type="submit" class="icon-btn send-btn" id="sendBtn" aria-label="Send message">
             <svg viewBox="0 0 24 24" width="18" height="18"><path d="M3 11l18-8-8 18-2.5-7.5L3 11z"/></svg>
           </button>

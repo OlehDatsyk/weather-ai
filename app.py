@@ -2,7 +2,7 @@
 app.py
 ------
 Flask application entry point. This module only wires HTTP routes to the
-domain services (`WeatherService`, `AIService`) — it contains no weather
+domain services (`WeatherService`, `AIService`) - it contains no weather
 parsing logic and no prompt text of its own. Run with:
 
     python app.py

@@ -52,7 +52,7 @@ class Config:
     SECRET_KEY: str = field(default_factory=lambda: os.getenv("SECRET_KEY", ""))
     DEBUG: bool = field(default_factory=lambda: _get_bool("FLASK_DEBUG", False))
     HOST: str = field(default_factory=lambda: os.getenv("HOST", "127.0.0.1"))
-    PORT: int = field(default_factory=lambda: _get_int("PORT", 1020))
+    PORT: int = field(default_factory=lambda: _get_int("PORT", 8000))
 
     # --- Weather provider ------------------------------------------------
     WEATHER_API_KEY: str = field(default_factory=lambda: os.getenv("WEATHER_API_KEY", ""))

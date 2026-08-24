@@ -128,7 +128,7 @@ REM ------------------------------------------------------------------
 echo [6/6] Starting Skyline...
 echo.
 echo   Once the server starts, open this address in your browser:
-echo   http://127.0.0.1:1020
+echo   http://127.0.0.1:8000
 echo.
 echo   Press CTRL+C in this window to stop the app.
 echo ============================================
